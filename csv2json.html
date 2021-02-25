@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON<->CSV Converter</title>
+    <link rel="stylesheet" href="csv2json.css">
+</head>
+<body>
+
+    <header class='header'>
+        <h1>JSON<->CSV Converter</h1>
+    </header>
+
+    <main class='section'>
+        <div class='section-align'>
+            <textarea class='input-text' placeholder="Type or paste JSON or CSV" spellcheck="false"></textarea>
+            <input type="file" id='button' value="Import file">
+        </div>
+        
+
+        <div class='section-align mid-button'>
+            <input type="button" id='button' value="JSON->CSV" onclick="convert(1)">
+            <input type="button" id='button' value="CSV->JSON" onclick="convert(2)">
+        </div>
+
+        <div class='section-align'>
+            <textarea class='input-text' id ='output-text' placeholder="Type or paste CSV or JSON"> </textarea>
+            <div>
+                <input type="button" id='button' value="Save" onclick="">
+                <input type="button" id='button' value="Clear all" onclick="">
+                <input type="button" id='button' value="Copy" onclick="">
+            </div>
+
+        </div>
+
+        
+
+    </main>
+    <div class='countdown'>
+        
+    </div>
+
+    <div class='footer'>
+        <p>Gabriel Stefano</p>
+    </div>
+    
+
+    <script src="csv2json.js">
+
+
+    </script>
+</body>
+</html>
